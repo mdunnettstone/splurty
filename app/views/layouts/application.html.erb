@@ -22,11 +22,12 @@
         </div>
         <% end %>
       </div>
-      <div class="col-4 slogan">
+      <div class="col-4 slogan hidden-xs-down">
       Giving you miscellaneous facts about workplace well-being
       </div>
-      <div class = "col-5 links">
+      <div class = "col-10 offset-1 offset-sm-0 col-sm-5 links">
         <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+        &nbsp;&nbsp;
         <%= link_to 'About', about_path %>
       </div>
     </header>
@@ -46,8 +47,9 @@
             <%= simple_form_for Quote.new do |f| %>
               <div class="modal-body">
                 <h1>Enter your stat</h1>        
-                  <%= f.input :saying %>
-                  <%= f.input :source %>
+                  <%= f.input :saying, label: 'Enter your stat', placeholder: '...My inspirational stat...' %>
+                  <br />
+                  <%= f.input :source, label: 'Enter the source', placeholder: '...Office perks 2017...' %>
                   <br />
               </div>
               <div class="modal-footer">
@@ -74,10 +76,10 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-sm-6">
           <%= link_to 'Show me another!', root_path, class: 'next-quote' %>
           </div>
-          <div class="col-6 footer-blurb">
+          <div class="col-12 col-sm-6 footer-blurb">
           Put together on day 2 of coding for <a href = "http://www.seedmusic.co.uk" target="_blank">Seed Music</a>
           </div>
         </div>

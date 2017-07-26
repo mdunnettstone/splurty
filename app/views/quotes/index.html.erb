@@ -1,2 +1,6 @@
-<h1><%= @quote.saying %></h1>
-<h2><%= @quote.source %></h2>
+<h2>
+  <span>Reason #<%= @quote.id %></span> why you should <a target="_blank" href="http://www.seedmusic.co.uk/get-in-touch">get in touch with Seed Music</a>
+</h2>  <br />
+
+<h1 class="col-10 col-sm-6 offset-1 offset-sm-2"><%= @quote.saying %></h1> <br />
+<h2 class="float-right">- <%= @quote.source %></h2>
