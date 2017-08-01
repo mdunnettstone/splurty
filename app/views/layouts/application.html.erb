@@ -51,6 +51,10 @@
                   <br />
                   <%= f.input :source, label: 'Enter the source', placeholder: '...Office perks 2017...' %>
                   <br />
+                  <%= f.input :source_year, collection: 2000..2017, label: 'Enter when the stat is from', placeholder: '...2017...' %>
+                  <br />
+                  <%= f.input :source_URL, label: 'Please provide a link', placeholder: '...www.example.com/researchpaper.pdf...' %>
+                  <br />
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -77,10 +81,10 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-6">
-          <%= link_to 'Show me another!', root_path, class: 'next-quote' %>
+          
           </div>
           <div class="col-12 col-sm-6 footer-blurb">
-          Put together on day 2 of coding for <a href = "http://www.seedmusic.co.uk" target="_blank">Seed Music</a>
+          Put together on day 3 of coding for <a href = "http://www.seedmusic.co.uk" target="_blank">Seed Music</a>
           </div>
         </div>
       </div>

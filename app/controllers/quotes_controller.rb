@@ -17,6 +17,6 @@ class QuotesController < ApplicationController
 private
 
   def quote_params
-    params.require(:quote).permit(:saying, :source)
+    params.require(:quote).permit(:saying, :source, :source_year, :source_URL)
   end
 end

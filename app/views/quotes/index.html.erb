@@ -1,6 +1,15 @@
 <h2>
-  <span>Reason #<%= @quote.id %></span> why you should <a target="_blank" href="http://www.seedmusic.co.uk/get-in-touch">get in touch with Seed Music</a>
+  <span>Fact #<%= @quote.id %></span>
 </h2>  <br />
 
-<h1 class="col-10 col-sm-6 offset-1 offset-sm-2"><%= @quote.saying %></h1> <br />
-<h2 class="float-right">- <%= @quote.source %></h2>
+<h1 class="col-12 text-center"><%= @quote.saying %></h1> <br />
+<%= link_to @quote.source_URL do %>
+<h2 class="text-center">- <%= @quote.source %> (<%= @quote.source_year %>)</h2>
+<% end %>
+<br />
+<br />
+<%= link_to root_path, :class => "next-quote" do %>
+<div class="btn btn-danger col-12 col-md-4 text-center offset-md-4">
+  <div>Show me another!</div>
+</div>
+<% end %>
